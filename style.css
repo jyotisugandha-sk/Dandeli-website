@@ -96,3 +96,107 @@ footer>a:last-child:hover{transform:translateY(-3px);box-shadow:0 8px 0 #020d08,
         height: 42px;
     }
 }
+
+/* =================================
+   FLOATING CUSTOMER CONTACT PANEL
+================================= */
+
+.floating-contact-panel {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
+}
+
+/* COMMON BUTTON STYLE */
+
+.floating-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    min-width: 175px;
+    padding: 14px 20px;
+
+    border-radius: 50px;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+
+    transition: all 0.3s ease;
+}
+
+/* ICON */
+
+.floating-icon {
+    font-size: 19px;
+}
+
+/* CALL BUTTON */
+
+.call-btn {
+    background: #102c25;
+    color: white;
+    border: 1px solid #d6ad60;
+}
+
+.call-btn:hover {
+    background: #1b4839;
+    transform: translateY(-4px);
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    background: #1da851;
+    transform: translateY(-4px);
+}
+
+/* GOOGLE REVIEW BUTTON */
+
+.review-btn {
+    background: linear-gradient(135deg, #d6ad60, #f4d58d);
+    color: #071b14;
+}
+
+.review-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(214,173,96,0.4);
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .floating-contact-panel {
+        right: 12px;
+        bottom: 18px;
+        gap: 10px;
+    }
+
+    .floating-btn {
+        min-width: 150px;
+        padding: 12px 16px;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .floating-icon {
+        font-size: 17px;
+    }
+}
